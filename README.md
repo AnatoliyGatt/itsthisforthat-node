@@ -86,6 +86,9 @@ Distributed under the [MIT License](LICENSE).
 
 [npm-package-downloads-badge]: https://img.shields.io/npm/dm/itsthisforthat-node.svg?style=flat-square
 
+[dependencies-status-badge]: https://david-dm.org/AnatoliyGatt/itsthisforthat-node.svg?style=flat-square
+[dependencies-status-page-url]: https://david-dm.org/AnatoliyGatt/itsthisforthat-node#info=dependencies
+
 [devDependencies-status-badge]: https://david-dm.org/AnatoliyGatt/itsthisforthat-node/dev-status.svg?style=flat-square
 [devDependencies-status-page-url]: https://david-dm.org/AnatoliyGatt/itsthisforthat-node#info=devDependencies
 
