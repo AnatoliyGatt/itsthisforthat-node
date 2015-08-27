@@ -1,4 +1,4 @@
-# ItsThisForThat for Node.js
+![itsthisforthat-node Logo][logo]
 
 An asynchronous client library for ItsThisForThat [API](http://itsthisforthat.com/api.php/).
 
@@ -81,6 +81,8 @@ $ npm test
 ## License
 
 Distributed under the [MIT License](LICENSE).
+
+[logo]: https://cldup.com/ioNRCvqF8P.png
 
 [npm-package-url]: https://npmjs.org/package/itsthisforthat-node
 
