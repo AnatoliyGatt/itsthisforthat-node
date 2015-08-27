@@ -96,4 +96,7 @@ Distributed under the [MIT License](LICENSE).
 [travis-ci-build-status-badge]: https://img.shields.io/travis/AnatoliyGatt/itsthisforthat-node.svg?style=flat-square
 [travis-ci-build-status-page-url]: https://travis-ci.org/AnatoliyGatt/itsthisforthat-node
 
+[code-climate-status-badge]: https://img.shields.io/codeclimate/github/AnatoliyGatt/itsthisforthat-node.svg?style=flat-square
+[code-climate-status-page-url]: https://codeclimate.com/github/AnatoliyGatt/itsthisforthat-node
+
 [npm-package-statistics-badge]: https://nodei.co/npm/itsthisforthat-node.png?downloads=true&downloadRank=true&stars=true
