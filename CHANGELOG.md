@@ -1,3 +1,11 @@
+1.0.3 / 2015-10-04
+==================
+
+* Update README.md
+* Update .travis.yml to run tests against node v4.1.0
+* Update dev dependencies
+* Update dependencies
+
 1.0.2 / 2015-09-29
 ==================
 
