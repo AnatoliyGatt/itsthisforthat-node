@@ -32,7 +32,7 @@ describe('itsthisforthat', function() {
         describe('#getIdea()', function() {
             it('should respond with valid idea object', function(done) {
                 itsThisForThat.getIdea(function(error, idea) {
-                    if(!error) {
+                    if (!error) {
                         assert.notEqual(idea, undefined, 'idea should not be undefined');
                         assert.notEqual(idea.this, undefined, 'idea.this should not be undefined');
                         assert.notEqual(idea.that, undefined, 'idea.that should not be undefined');
