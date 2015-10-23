@@ -1,7 +1,7 @@
 var assert = require('assert');
 var itsThisForThat = require('../lib/itsthisforthat')();
 
-describe('itsthisforthat', function() {
+describe('itsthisforthat', function () {
     describe('init', function () {
         var defaultRequestOptions = {};
 
@@ -28,16 +28,16 @@ describe('itsthisforthat', function() {
         });
     });
 
-    describe('functions', function() {
-        describe('#getIdea()', function() {
-            it('should respond with valid idea object', function(done) {
-                itsThisForThat.getIdea(function(error, idea) {
+    describe('functions', function () {
+        describe('#getIdea()', function () {
+            it('should respond with valid idea object', function (done) {
+                itsThisForThat.getIdea(function (error, idea) {
                     if (!error) {
                         assert.notEqual(idea, undefined, 'idea should not be undefined');
                         assert.notEqual(idea.this, undefined, 'idea.this should not be undefined');
                         assert.notEqual(idea.that, undefined, 'idea.that should not be undefined');
                     } else {
-                        assert.throws(function() {
+                        assert.throws(function () {
                             throw error;
                         }, Error);
                     }
@@ -45,18 +45,18 @@ describe('itsthisforthat', function() {
                 });
             });
 
-            it('should fail when called without arguments', function() {
-                assert.throws(function() {
+            it('should fail when called without arguments', function () {
+                assert.throws(function () {
                     itsThisForThat.getIdea();
                 }, Error);
             });
 
-            it('should not be overridden', function() {
-                itsThisForThat.getIdea = function() {
+            it('should not be overridden', function () {
+                itsThisForThat.getIdea = function () {
                     return '#getIdea()';
                 };
 
-                assert.throws(function() {
+                assert.throws(function () {
                     assert.notEqual(itsThisForThat.getIdea(), '#getIdea()', '#getIdea() should not be overridden');
                 }, Error);
             });
