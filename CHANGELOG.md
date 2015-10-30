@@ -1,3 +1,16 @@
+1.0.4 / 2015-10-30
+==================
+
+* Fix anonymous functions declaration coding style in itsthisforthat.js tests
+* Fix anonymous functions declaration coding style in itsthisforthat.js
+* Fix 'if-else statement' coding style in itsthisforthat.js tests
+* Fix 'try-catch statement' coding style in itsthisforthat.js
+* Fix 'if statement' coding style in itsthisforthat.js
+* Update dev dependencies
+* Update .travis.yml to run tests against node v4.2.0
+* Remove manual deletion script of coverage directory in .travis.yml
+* Replace unencrypted CodeClimate repo_token with encrypted one in .travis.yml
+
 1.0.3 / 2015-10-04
 ==================
 
