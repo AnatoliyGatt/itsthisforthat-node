@@ -28,7 +28,7 @@ The quickest way to get started is by executing following code:
 var itsThisForThat = require('itsthisforthat-node')();
 
 itsThisForThat.getIdea(function (error, idea) {
-    if(!error) {
+    if (!error) {
         console.log(idea);
     } else {
         console.error(error);
