@@ -56,7 +56,7 @@ Requests random idea.
 Requests random idea.
 
 ```javascript
-itsThisForThat.getIdea(function(error, idea) {
+itsThisForThat.getIdea(function (error, idea) {
     if(!error) {
         console.log('So, Basically, It\'s Like A ' + idea.this + ' for ' + idea.that);
     } else {
