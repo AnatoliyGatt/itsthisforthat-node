@@ -20,12 +20,16 @@ describe('itsthisforthat', function () {
 
     describe('functions', function () {
         describe('#getIdea()', function () {
+            function validateIdea(idea) {
+                assert.notEqual(idea, undefined, 'idea should not be undefined');
+                assert.notEqual(idea.this, undefined, 'idea.this should not be undefined');
+                assert.notEqual(idea.that, undefined, 'idea.that should not be undefined');
+            }
+
             it('should respond with valid idea object', function (done) {
                 itsThisForThat.getIdea(function (error, idea) {
                     if (!error) {
-                        assert.notEqual(idea, undefined, 'idea should not be undefined');
-                        assert.notEqual(idea.this, undefined, 'idea.this should not be undefined');
-                        assert.notEqual(idea.that, undefined, 'idea.that should not be undefined');
+                        validateIdea(idea);
                     } else {
                         assert.throws(function () {
                             throw error;
