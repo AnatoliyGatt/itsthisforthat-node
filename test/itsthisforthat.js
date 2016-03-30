@@ -30,13 +30,10 @@ describe('itsthisforthat', function () {
 
             it('should respond with valid idea object', function (done) {
                 itsThisForThat.getIdea(function (error, idea) {
-                    if (!error) {
-                        validateIdea(idea);
-                    } else {
-                        assert.throws(function () {
-                            throw error;
-                        }, Error);
+                    if (error) {
+                        throw error;
                     }
+                    validateIdea(idea);
                     done();
                 });
             });
