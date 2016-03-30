@@ -40,16 +40,6 @@ describe('itsthisforthat', function () {
                     itsThisForThat.getIdea();
                 }, Error);
             });
-
-            it('should not be overridden', function () {
-                itsThisForThat.getIdea = function () {
-                    return '#getIdea()';
-                };
-
-                assert.throws(function () {
-                    assert.notEqual(itsThisForThat.getIdea(), '#getIdea()', '#getIdea() should not be overridden');
-                }, Error);
-            });
         });
     });
 });
