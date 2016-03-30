@@ -16,16 +16,6 @@ describe('itsthisforthat', function () {
         it('should have correct default request options', function () {
             assert.deepEqual(itsThisForThat.defaultRequestOptions, defaultRequestOptions, 'default request options should have correct initial property values');
         });
-
-        it('should not override default request options', function () {
-            itsThisForThat.defaultRequestOptions = {
-                hostname: 'itsthisforthat.us',
-                port: 3000,
-                basePath: '/api.php'
-            };
-
-            assert.deepEqual(itsThisForThat.defaultRequestOptions, defaultRequestOptions, 'default request options should not be overridden');
-        });
     });
 
     describe('functions', function () {
