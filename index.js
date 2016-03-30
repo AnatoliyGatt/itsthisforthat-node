@@ -11,8 +11,8 @@
 
 /**
  * @public
- * @description Expose function to initialize unchangeable instance of ItsThisForThat.
- * @returns {Function} - Function to initialize unchangeable instance of ItsThisForThat.
+ * @description Expose function to initialize instance of ItsThisForThat.
+ * @returns {Function} - Function to initialize instance of ItsThisForThat.
  */
 
 module.exports = require('./lib/itsthisforthat');
