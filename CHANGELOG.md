@@ -1,3 +1,17 @@
+1.0.6 / 2016-03-30
+==================
+
+* Remove dependencies badge from README.md
+* Remove deep-freeze-node as dependency in package.json
+* Fix itsthisforthat.js tests
+* Update itsthisforthat.js tests
+* Update index.js documentation comments
+* Remove require of deep-freeze-node in itsthisforthat.js
+* Update itsthisforthat.js documentation comments
+* Expose unfrozen instance of ItsThisForThat in itsthisforthat.js
+* Update dev dependencies
+* Update dependencies
+
 1.0.5 / 2016-03-03
 ==================
 
