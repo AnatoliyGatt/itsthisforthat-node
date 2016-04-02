@@ -21,11 +21,9 @@ describe('itsthisforthat', function () {
     describe('functions', function () {
         describe('#getIdea()', function () {
             function validateIdea(idea) {
-                assert.notEqual(idea, undefined, 'idea should not be undefined');
-                assert.notEqual(idea.this, undefined, 'idea.this should not be undefined');
-                assert.notEqual(idea.this, '', 'idea.this should not be empty');
-                assert.notEqual(idea.that, undefined, 'idea.that should not be undefined');
-                assert.notEqual(idea.that, '', 'idea.that should not be empty');
+                assert.ok(idea, 'idea should not be undefined, null or empty');
+                assert.ok(idea.this, 'idea.this should not be undefined, null or empty');
+                assert.ok(idea.that, 'idea.that should not be undefined, null or empty');
             }
 
             it('should respond with valid idea object', function (done) {
