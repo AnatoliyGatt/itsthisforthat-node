@@ -1,11 +1,11 @@
 var assert = require('assert');
 var itsThisForThat = require('../lib/itsthisforthat')();
 
-describe('itsthisforthat', function () {
-  describe('init', function () {
+describe('itsthisforthat', () => {
+  describe('init', () => {
     let defaultRequestOptions = {};
 
-    before(function () {
+    before(() => {
       defaultRequestOptions = {
         hostname: 'itsthisforthat.com',
         port: 80,
@@ -13,7 +13,7 @@ describe('itsthisforthat', function () {
       };
     });
 
-    it('should have correct default request options', function () {
+    it('should have correct default request options', () => {
       assert.deepEqual(
         itsThisForThat.defaultRequestOptions,
         defaultRequestOptions,
@@ -22,8 +22,8 @@ describe('itsthisforthat', function () {
     });
   });
 
-  describe('functions', function () {
-    describe('#getIdea()', function () {
+  describe('functions', () => {
+    describe('#getIdea()', () => {
       function validateIdea(idea) {
         assert.ok(idea, 'idea should not be undefined, null or empty');
         assert.ok(
@@ -36,8 +36,8 @@ describe('itsthisforthat', function () {
         );
       }
 
-      it('should respond with valid idea object', function (done) {
-        itsThisForThat.getIdea(function (error, idea) {
+      it('should respond with valid idea object', (done) => {
+        itsThisForThat.getIdea((error, idea) => {
           if (error) {
             return done(error);
           }
@@ -46,8 +46,8 @@ describe('itsthisforthat', function () {
         });
       });
 
-      it('should fail when called without arguments', function () {
-        assert.throws(function () {
+      it('should fail when called without arguments', () => {
+        assert.throws(() => {
           itsThisForThat.getIdea();
         }, Error);
       });
