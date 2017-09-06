@@ -3,7 +3,7 @@ var itsThisForThat = require('../lib/itsthisforthat')();
 
 describe('itsthisforthat', function () {
     describe('init', function () {
-        var defaultRequestOptions = {};
+        let defaultRequestOptions = {};
 
         before(function () {
             defaultRequestOptions = {
