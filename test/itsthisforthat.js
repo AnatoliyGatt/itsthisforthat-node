@@ -1,5 +1,5 @@
-var assert = require('assert');
-var itsThisForThat = require('../lib/itsthisforthat')();
+const assert = require('assert');
+const itsThisForThat = require('../lib/itsthisforthat')();
 
 describe('itsthisforthat', () => {
   describe('init', () => {
