@@ -25,14 +25,14 @@ An asynchronous client library for ItsThisForThat [API](http://itsthisforthat.co
 The quickest way to get started is by executing following code:
 
 ```javascript
-var itsThisForThat = require('itsthisforthat-node')();
+const itsThisForThat = require('itsthisforthat-node')();
 
-itsThisForThat.getIdea(function (error, idea) {
-    if (!error) {
-        console.log(idea);
-    } else {
-        console.error(error);
-    }
+itsThisForThat.getIdea((error, idea) => {
+  if (!error) {
+    console.log(idea);
+  } else {
+    console.error(error);
+  }
 });
 ```
 
@@ -56,12 +56,12 @@ Requests random idea.
 Requests random idea.
 
 ```javascript
-itsThisForThat.getIdea(function (error, idea) {
-    if (!error) {
-        console.log('So, Basically, It\'s Like A ' + idea.this + ' for ' + idea.that);
-    } else {
-        console.error(error);
-    }
+itsThisForThat.getIdea((error, idea) => {
+  if (!error) {
+    console.log('So, Basically, It\'s Like A ' + idea.this + ' for ' + idea.that);
+  } else {
+    console.error(error);
+  }
 });
 ```
 
