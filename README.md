@@ -27,13 +27,12 @@ The quickest way to get started is by executing following code:
 ```javascript
 const itsThisForThat = require('itsthisforthat-node')();
 
-itsThisForThat.getIdea((error, idea) => {
-  if (!error) {
-    console.log(idea);
-  } else {
-    console.error(error);
-  }
-});
+try {
+  let idea = await itsThisForThat.getIdea();
+  console.log(idea);
+} catch (err) {
+  console.error(err);
+}
 ```
 
 If everything went well, you'll see something like this in your console:
@@ -56,13 +55,12 @@ Requests random idea.
 Requests random idea.
 
 ```javascript
-itsThisForThat.getIdea((error, idea) => {
-  if (!error) {
-    console.log('So, Basically, It\'s Like A ' + idea.this + ' for ' + idea.that);
-  } else {
-    console.error(error);
-  }
-});
+try {
+  let idea = await itsThisForThat.getIdea();
+  console.log('So, Basically, It\'s Like A ' + idea.this + ' for ' + idea.that);
+} catch (err) {
+  console.error(err);
+}
 ```
 
 #### Errors
