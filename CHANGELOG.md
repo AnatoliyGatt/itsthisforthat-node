@@ -1,3 +1,9 @@
+3.0.0 / 2016-09-07
+==================
+
+* Encourage use of async/await
+* Promisify getIdea()
+
 2.0.1 / 2016-09-07
 ==================
 
