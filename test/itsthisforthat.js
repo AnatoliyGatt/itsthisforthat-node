@@ -37,19 +37,12 @@ describe('itsthisforthat', () => {
       }
 
       it('should respond with valid idea object', (done) => {
-        itsThisForThat.getIdea((error, idea) => {
-          if (error) {
-            return done(error);
-          }
+        itsThisForThat.getIdea().then((idea) => {
           validateIdea(idea);
           done();
+        }).catch((err) => {
+          done(err);
         });
-      });
-
-      it('should fail when called without arguments', () => {
-        assert.throws(() => {
-          itsThisForThat.getIdea();
-        }, Error);
       });
     });
   });
