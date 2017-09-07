@@ -30,8 +30,8 @@ const itsThisForThat = require('itsthisforthat-node')();
 try {
   let idea = await itsThisForThat.getIdea();
   console.log(idea);
-} catch (err) {
-  console.error(err);
+} catch (error) {
+  console.error(error);
 }
 ```
 
@@ -58,8 +58,8 @@ Requests random idea.
 try {
   let idea = await itsThisForThat.getIdea();
   console.log('So, Basically, It\'s Like A ' + idea.this + ' for ' + idea.that);
-} catch (err) {
-  console.error(err);
+} catch (error) {
+  console.error(error);
 }
 ```
 
