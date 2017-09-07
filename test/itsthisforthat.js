@@ -36,13 +36,13 @@ describe('itsthisforthat', () => {
         );
       }
 
-      it('should respond with valid idea object', (done) => {
-        itsThisForThat.getIdea().then((idea) => {
+      it('should respond with valid idea object', async () => {
+        try {
+          let idea = await itsThisForThat.getIdea();
           validateIdea(idea);
-          done();
-        }).catch((err) => {
-          done(err);
-        });
+        } catch (error) {
+          assert.ifError(error);
+        }
       });
     });
   });
